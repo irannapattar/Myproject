@@ -1,8 +1,8 @@
-package main
+package Hello
 
 import "fmt"
 
-func main() {
+func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
 }
