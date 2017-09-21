@@ -14,5 +14,6 @@ func hello() int {
 	for i := 0; i < 5; i++ {
 		total += i
 	}
+	fmt.Println("total", total)
 	return total
 }
