@@ -1,13 +1,14 @@
-package Hello
+package main
 
 import (
 	"fmt"
 	"testing"
-	//	"github.com/stretchr/testify/assert"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestHelloworld(t *testing.T) {
 	total := hello()
 	fmt.Println(total)
-	asset.Equal(t, 15, total, "Should be eqaul")
+	assert.Equal(t, 15, total, "Should be eqaul")
 }
