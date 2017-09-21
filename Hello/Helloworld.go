@@ -1,7 +1,16 @@
-package main
+package Hello
 
 import "fmt"
 
-func main(){
-  fmt.Println("Hello World!")
+func main() {
+	total := hello()
+	fmt.Println("Total", total)
+}
+
+func hello() int {
+	total := 0
+	for i := 0; i < 5; i++ {
+		total += i
+	}
+	return total
 }
