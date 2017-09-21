@@ -5,4 +5,4 @@ jobs:
        - image: circleci/golang:1.8
      steps:
        - checkout
-       - run: go run Helloworld.go
+       - run: go run Hello/Helloworld.go
