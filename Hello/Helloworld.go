@@ -6,6 +6,7 @@ func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
 	fmt.Println("end of statement")
+	//fmt.Println("Total", total)
 }
 
 func hello() int {
