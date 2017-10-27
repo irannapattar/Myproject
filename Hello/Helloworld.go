@@ -8,6 +8,7 @@ func Helloworld() {
 	sayHello()
 	fmt.Println("before statement hi")
 	fmt.Println("end of statement")
+	sayHello()
 	l := getLenofString("hello")
 	fmt.Println(l)
 	sayHello()
