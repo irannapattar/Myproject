@@ -5,6 +5,7 @@ import "fmt"
 func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
+	fmt.Println("end of statement")
 }
 
 func hello() int {
