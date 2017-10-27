@@ -6,6 +6,8 @@ func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
 	fmt.Println("end of statement")
+	l := getLenofString("hello")
+	fmt.Println(l)
 }
 
 func hello() int {
@@ -15,4 +17,7 @@ func hello() int {
 	}
 	fmt.Println("total", total)
 	return total
+}
+func getLenofString(s string) int {
+	return len(s)
 }
