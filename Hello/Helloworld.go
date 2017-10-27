@@ -1,6 +1,12 @@
 package Hello
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"net"
+	"strconv"
+	"time"
+)
 
 func Helloworld() {
 	total := hello()
@@ -10,6 +16,9 @@ func Helloworld() {
 	l := getLenofString("hello")
 	fmt.Println(l)
 	sayHello()
+	port := getPortNum()
+	fmt.Printf("TCP Port %q is available\n", port)
+
 }
 
 func hello() int {
@@ -25,4 +34,25 @@ func getLenofString(s string) int {
 }
 func sayHello() {
 	fmt.Println("hello")
+}
+func getPortNum() string {
+	low := 1000
+	high := 99999
+	for {
+		src := rand.NewSource(time.Now().UnixNano())
+		pt := low + rand.New(src).Intn(high)
+		fmt.Println(pt)
+		port := strconv.Itoa(pt)
+
+		ln, err := net.Listen("tcp", ":"+port)
+
+		if err != nil {
+			fmt.Println("port running")
+			continue
+		}
+
+		_ = ln.Close()
+
+		return port
+	}
 }
