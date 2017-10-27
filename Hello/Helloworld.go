@@ -12,6 +12,7 @@ func Helloworld() {
 	l := getLenofString("hello")
 	fmt.Println(l)
 	sayHello()
+	sayHello()
 }
 
 func hello() int {
