@@ -5,8 +5,11 @@ import "fmt"
 func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
+	fmt.Println("before statement")
+	fmt.Println("end of statement")
 	l := getLenofString("hello")
 	fmt.Println(l)
+	sayHello()
 }
 
 func hello() int {
@@ -19,4 +22,7 @@ func hello() int {
 }
 func getLenofString(s string) int {
 	return len(s)
+}
+func sayHello() {
+	fmt.Println("hello")
 }
