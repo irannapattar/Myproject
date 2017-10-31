@@ -15,7 +15,6 @@ func Helloworld() {
 	sayHello()
 	l := getLenofString("hello")
 	fmt.Println(l)
-	sayHello()
 	port := getPortNum()
 	fmt.Printf("TCP Port %q is available\n", port)
 
