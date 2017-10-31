@@ -11,6 +11,7 @@ import (
 func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
+
 	sayHello()
 	sayHello()
 	l := getLenofString("hello")
@@ -20,6 +21,7 @@ func Helloworld() {
 	sayHello()
 	port := getPortNum()
 	fmt.Printf("TCP Port %q is available\n", port)
+	getPortNum()
 }
 
 func hello() int {
