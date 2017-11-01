@@ -11,11 +11,11 @@ import (
 func Helloworld() {
 	total := hello()
 	fmt.Println("Total", total)
-
-	sayHello()
-	sayHello()
 	l := getLenofString("hello")
-	fmt.Println(l)s
+	fmt.Println(l)
+	sayHello()
+	fmt.Println(l)
+
 	port := getPortNum()
 	fmt.Printf("TCP Port %q is available\n", port)
 	getPortNum()
